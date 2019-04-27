@@ -3055,7 +3055,7 @@ function update()
 			pos = 0;
 			player.reset();
 			lives = lives - 1;
-			if(lives == 0) alert("Tough luck, Stupid Boy,");
+			if(lives == 0) alert("You cannot write Chinese!");
 		}
 	}
 	if(!player.shooting && (toDestroy != -1)) 

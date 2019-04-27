@@ -29,7 +29,7 @@ class Character
 		ctx.beginPath();
 		ctx.arc(X(this.x), Y(this.y), scale(this.r), 0.0, 2.0*Math.PI);
 		ctx.fill();
-		ctx.font = scale(1.4*this.r) + "px Arial";
+		ctx.font = scale(1.44*this.r) + "px Arial";
 		if(this.targeted) ctx.fillStyle = "blue";
 		else ctx.fillStyle = "red";
 		ctx.fillText(this.hanzi, X(this.x - 0.7*this.r), Y(this.y - 0.7*this.r));

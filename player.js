@@ -8,7 +8,7 @@ class Player
 		this.ty = 0.0;
 		this.angle = 0.0;
 		this.target = 0.0;
-		this.r = 0.05;
+		this.r = 0.06;
 		this.w = 10.0;
 		this.L = 0.0;
 		this.Q = 0.0;
