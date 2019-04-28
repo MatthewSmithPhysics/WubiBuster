@@ -7,8 +7,9 @@ class Character
 		this.angle = Math.random()*2.0*Math.PI;
 		this.x = 1.0*Math.cos(this.angle);
 		this.y = 1.0*Math.sin(this.angle);
-		this.vx = -0.05*this.x;
-		this.vy = -0.05*this.y;
+		this.v = 0.1;
+		this.vx = -this.v*this.x;
+		this.vy = -this.v*this.y;
 		this.r = 0.05;
 		this.fill = false;
 		this.targeted = false;

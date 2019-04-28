@@ -3048,7 +3048,7 @@ function update()
 	if(!player.shooting)for(var i = 0; i < character.length; i++) character[i].update(dt);
 	for(var i = 0; i < character.length; i++)
 	{
-		if(Math.pow(character[i].x, 2.0) + Math.pow(character[i].y, 2.0) - Math.pow(character[i].r, 2.0) < 0.0)
+		if(Math.abs(Math.pow(character[i].x, 2.0) + Math.pow(character[i].y, 2.0) - Math.pow(character[i].r, 2.0)) < currentCharacter.v*dt)
 		{
 			currentCharacter.targeted = false;
 			character.splice(i, 1);
@@ -3063,6 +3063,7 @@ function update()
 		character.splice(toDestroy, 1);
 		toDestroy = -1;
 	}
+	document.getElementById("statusDiv").innerHTML = "" + pos;
 }
 
 function keyboardInput(event)
